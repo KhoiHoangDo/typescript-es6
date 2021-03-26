@@ -1,19 +1,19 @@
-class Person{
-    constructor(name){
+class Person {
+    constructor(name) {
         console.log(name + ' Person contructor');
     }
 
-    getID(){
+    getID() {
         return 10;
     }
 }
 
-class Employee extends Person{
-    constructor(name){
+class Employee extends Person {
+    constructor(name) {
         super(name);
         console.log(name + ' Employee Contructor')
     }
-    getID(){
+    getID() {
         return super.getID();
     }
 }
